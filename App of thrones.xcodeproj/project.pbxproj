@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A946AEC423F5F07600422945 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEC323F5F07600422945 /* EpisodeViewController.swift */; };
+		A946AEC623F5F08800422945 /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A946AEC523F5F08800422945 /* EpisodeViewController.xib */; };
+		A946AECC23F6021500422945 /* CastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AECB23F6021500422945 /* CastViewController.swift */; };
+		A946AECE23F6022400422945 /* CastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A946AECD23F6022400422945 /* CastViewController.xib */; };
+		A946AED323F602BB00422945 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A946AED223F602BB00422945 /* SettingsViewController.xib */; };
+		A946AED923F6057900422945 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AED823F6057900422945 /* Episode.swift */; };
+		A946AEE023F6060800422945 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEDE23F6060800422945 /* HouseViewController.swift */; };
+		A946AEE123F6060800422945 /* HouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A946AEDF23F6060800422945 /* HouseViewController.xib */; };
+		A946AEE323F60C4C00422945 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEE223F60C4C00422945 /* RateViewController.swift */; };
+		A946AEE523FB319E00422945 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEE423FB319E00422945 /* EpisodeTableViewCell.swift */; };
+		A946AEE723FB31E000422945 /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A946AEE623FB31E000422945 /* EpisodeTableViewCell.xib */; };
+		A946AEE923FB492000422945 /* CastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEE823FB492000422945 /* CastTableViewCell.swift */; };
+		A946AEEB23FB4C1600422945 /* CastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A946AEEA23FB4C1600422945 /* CastTableViewCell.xib */; };
+		A946AEED23FB515400422945 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEEC23FB515400422945 /* DataController.swift */; };
+		A946AEEF23FB534500422945 /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEEE23FB534500422945 /* Cast.swift */; };
+		A946AEF123FB54E200422945 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEF023FB54E200422945 /* House.swift */; };
+		A946AEF323FC690E00422945 /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEF223FC690D00422945 /* HouseTableViewCell.swift */; };
+		A946AEF523FC694600422945 /* HouseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A946AEF423FC694600422945 /* HouseTableViewCell.xib */; };
+		A946AEF723FC828C00422945 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEF623FC828C00422945 /* Rating.swift */; };
+		A946AEF92401C3B400422945 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AEF82401C3B400422945 /* SettingsViewController.swift */; };
+		A946AF18240413B100422945 /* season_4.json in Resources */ = {isa = PBXBuildFile; fileRef = A946AF0E240413B100422945 /* season_4.json */; };
+		A946AF19240413B100422945 /* houses.json in Resources */ = {isa = PBXBuildFile; fileRef = A946AF0F240413B100422945 /* houses.json */; };
+		A946AF1A240413B100422945 /* season_5.json in Resources */ = {isa = PBXBuildFile; fileRef = A946AF10240413B100422945 /* season_5.json */; };
+		A946AF1B240413B100422945 /* season_1.json in Resources */ = {isa = PBXBuildFile; fileRef = A946AF11240413B100422945 /* season_1.json */; };
+		A946AF1C240413B100422945 /* season_7.json in Resources */ = {isa = PBXBuildFile; fileRef = A946AF12240413B100422945 /* season_7.json */; };
+		A946AF1D240413B100422945 /* season_2.json in Resources */ = {isa = PBXBuildFile; fileRef = A946AF13240413B100422945 /* season_2.json */; };
+		A946AF1E240413B100422945 /* cast.json in Resources */ = {isa = PBXBuildFile; fileRef = A946AF14240413B100422945 /* cast.json */; };
+		A946AF1F240413B100422945 /* season_8.json in Resources */ = {isa = PBXBuildFile; fileRef = A946AF15240413B100422945 /* season_8.json */; };
+		A946AF20240413B100422945 /* season_6.json in Resources */ = {isa = PBXBuildFile; fileRef = A946AF16240413B100422945 /* season_6.json */; };
+		A946AF21240413B100422945 /* season_3.json in Resources */ = {isa = PBXBuildFile; fileRef = A946AF17240413B100422945 /* season_3.json */; };
+		A946AF232405A91900422945 /* CastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AF222405A91900422945 /* CastDetailViewController.swift */; };
+		A946AF252405A94100422945 /* CastDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A946AF242405A94100422945 /* CastDetailViewController.xib */; };
+		A946AF272405AEB000422945 /* CastDetailCellModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AF262405AEB000422945 /* CastDetailCellModels.swift */; };
+		A946AF292405BB1000422945 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946AF282405BB1000422945 /* AvatarCell.swift */; };
+		A946AF2B2405BB4A00422945 /* AvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A946AF2A2405BB4A00422945 /* AvatarCell.xib */; };
+		A94B12EA2405C585006CDFF0 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B12E92405C585006CDFF0 /* InfoCell.swift */; };
+		A94B12EC2405C5B9006CDFF0 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94B12EB2405C5B9006CDFF0 /* InfoCell.xib */; };
+		A94B12EF2405E991006CDFF0 /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B12ED2405E990006CDFF0 /* EpisodeDetailViewController.swift */; };
+		A94B12F02405E991006CDFF0 /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94B12EE2405E991006CDFF0 /* EpisodeDetailViewController.xib */; };
+		A94B12F52405FF1A006CDFF0 /* RatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B12F32405FF1A006CDFF0 /* RatingCell.swift */; };
+		A94B12F62405FF1A006CDFF0 /* RatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94B12F42405FF1A006CDFF0 /* RatingCell.xib */; };
+		A94B12F92405FF37006CDFF0 /* OverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B12F72405FF37006CDFF0 /* OverviewCell.swift */; };
+		A94B12FA2405FF37006CDFF0 /* OverviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94B12F82405FF37006CDFF0 /* OverviewCell.xib */; };
+		A94B12FC24082FCF006CDFF0 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B12FB24082FCF006CDFF0 /* FavouritesViewController.swift */; };
+		A94B12FE24083000006CDFF0 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94B12FD24083000006CDFF0 /* FavouritesViewController.xib */; };
+		A98CFCC723F34BDE00DA2EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98CFCC623F34BDE00DA2EA2 /* AppDelegate.swift */; };
+		A98CFCC923F34BDE00DA2EA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98CFCC823F34BDE00DA2EA2 /* SceneDelegate.swift */; };
+		A98CFCD123F34BDE00DA2EA2 /* App_of_thrones.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A98CFCCF23F34BDE00DA2EA2 /* App_of_thrones.xcdatamodeld */; };
+		A98CFCD323F34BE000DA2EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98CFCD223F34BE000DA2EA2 /* Assets.xcassets */; };
+		A98CFCD623F34BE000DA2EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98CFCD423F34BE000DA2EA2 /* LaunchScreen.storyboard */; };
+		A98CFCE423F3610E00DA2EA2 /* RateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98CFCE223F3610E00DA2EA2 /* RateViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A946AEC323F5F07600422945 /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
+		A946AEC523F5F08800422945 /* EpisodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeViewController.xib; sourceTree = "<group>"; };
+		A946AECB23F6021500422945 /* CastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastViewController.swift; sourceTree = "<group>"; };
+		A946AECD23F6022400422945 /* CastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastViewController.xib; sourceTree = "<group>"; };
+		A946AED223F602BB00422945 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		A946AED823F6057900422945 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		A946AEDE23F6060800422945 /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		A946AEDF23F6060800422945 /* HouseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseViewController.xib; sourceTree = "<group>"; };
+		A946AEE223F60C4C00422945 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
+		A946AEE423FB319E00422945 /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		A946AEE623FB31E000422945 /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
+		A946AEE823FB492000422945 /* CastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastTableViewCell.swift; sourceTree = "<group>"; };
+		A946AEEA23FB4C1600422945 /* CastTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastTableViewCell.xib; sourceTree = "<group>"; };
+		A946AEEC23FB515400422945 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		A946AEEE23FB534500422945 /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
+		A946AEF023FB54E200422945 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		A946AEF223FC690D00422945 /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
+		A946AEF423FC694600422945 /* HouseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseTableViewCell.xib; sourceTree = "<group>"; };
+		A946AEF623FC828C00422945 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		A946AEF82401C3B400422945 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "App of thrones/SettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A946AF0E240413B100422945 /* season_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_4.json; sourceTree = "<group>"; };
+		A946AF0F240413B100422945 /* houses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = houses.json; sourceTree = "<group>"; };
+		A946AF10240413B100422945 /* season_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_5.json; sourceTree = "<group>"; };
+		A946AF11240413B100422945 /* season_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_1.json; sourceTree = "<group>"; };
+		A946AF12240413B100422945 /* season_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_7.json; sourceTree = "<group>"; };
+		A946AF13240413B100422945 /* season_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_2.json; sourceTree = "<group>"; };
+		A946AF14240413B100422945 /* cast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cast.json; sourceTree = "<group>"; };
+		A946AF15240413B100422945 /* season_8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_8.json; sourceTree = "<group>"; };
+		A946AF16240413B100422945 /* season_6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_6.json; sourceTree = "<group>"; };
+		A946AF17240413B100422945 /* season_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = season_3.json; sourceTree = "<group>"; };
+		A946AF222405A91900422945 /* CastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastDetailViewController.swift; sourceTree = "<group>"; };
+		A946AF242405A94100422945 /* CastDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastDetailViewController.xib; sourceTree = "<group>"; };
+		A946AF262405AEB000422945 /* CastDetailCellModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastDetailCellModels.swift; sourceTree = "<group>"; };
+		A946AF282405BB1000422945 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		A946AF2A2405BB4A00422945 /* AvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarCell.xib; sourceTree = "<group>"; };
+		A94B12E92405C585006CDFF0 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		A94B12EB2405C5B9006CDFF0 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
+		A94B12ED2405E990006CDFF0 /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
+		A94B12EE2405E991006CDFF0 /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
+		A94B12F32405FF1A006CDFF0 /* RatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCell.swift; sourceTree = "<group>"; };
+		A94B12F42405FF1A006CDFF0 /* RatingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingCell.xib; sourceTree = "<group>"; };
+		A94B12F72405FF37006CDFF0 /* OverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewCell.swift; sourceTree = "<group>"; };
+		A94B12F82405FF37006CDFF0 /* OverviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverviewCell.xib; sourceTree = "<group>"; };
+		A94B12FB24082FCF006CDFF0 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		A94B12FD24083000006CDFF0 /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
+		A98CFCC323F34BDE00DA2EA2 /* App of thrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App of thrones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98CFCC623F34BDE00DA2EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A98CFCC823F34BDE00DA2EA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A98CFCD023F34BDE00DA2EA2 /* App_of_thrones.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = App_of_thrones.xcdatamodel; sourceTree = "<group>"; };
+		A98CFCD223F34BE000DA2EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A98CFCD523F34BE000DA2EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A98CFCD723F34BE000DA2EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A98CFCE223F3610E00DA2EA2 /* RateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A98CFCC023F34BDE00DA2EA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A946AECA23F601F200422945 /* Cast */ = {
+			isa = PBXGroup;
+			children = (
+				A946AECB23F6021500422945 /* CastViewController.swift */,
+				A946AECD23F6022400422945 /* CastViewController.xib */,
+				A946AEE823FB492000422945 /* CastTableViewCell.swift */,
+				A946AEEA23FB4C1600422945 /* CastTableViewCell.xib */,
+				A946AF222405A91900422945 /* CastDetailViewController.swift */,
+				A946AF242405A94100422945 /* CastDetailViewController.xib */,
+				A946AF282405BB1000422945 /* AvatarCell.swift */,
+				A946AF2A2405BB4A00422945 /* AvatarCell.xib */,
+				A94B12E92405C585006CDFF0 /* InfoCell.swift */,
+				A94B12EB2405C5B9006CDFF0 /* InfoCell.xib */,
+			);
+			path = Cast;
+			sourceTree = "<group>";
+		};
+		A946AECF23F6029000422945 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A946AEF82401C3B400422945 /* SettingsViewController.swift */,
+				A946AED223F602BB00422945 /* SettingsViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A946AED723F6055E00422945 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A946AED823F6057900422945 /* Episode.swift */,
+				A946AEEE23FB534500422945 /* Cast.swift */,
+				A946AEF023FB54E200422945 /* House.swift */,
+				A946AEF623FC828C00422945 /* Rating.swift */,
+				A946AF262405AEB000422945 /* CastDetailCellModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A98CFCBA23F34BDE00DA2EA2 = {
+			isa = PBXGroup;
+			children = (
+				A98CFCC523F34BDE00DA2EA2 /* App of thrones */,
+				A98CFCC423F34BDE00DA2EA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A98CFCC423F34BDE00DA2EA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A98CFCC323F34BDE00DA2EA2 /* App of thrones.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A98CFCC523F34BDE00DA2EA2 /* App of thrones */ = {
+			isa = PBXGroup;
+			children = (
+				A98CFCC823F34BDE00DA2EA2 /* SceneDelegate.swift */,
+				A98CFCC623F34BDE00DA2EA2 /* AppDelegate.swift */,
+				A946AED723F6055E00422945 /* Models */,
+				A946AECF23F6029000422945 /* Settings */,
+				A946AECA23F601F200422945 /* Cast */,
+				A98CFCD223F34BE000DA2EA2 /* Assets.xcassets */,
+				A946AEC323F5F07600422945 /* EpisodeViewController.swift */,
+				A946AEC523F5F08800422945 /* EpisodeViewController.xib */,
+				A946AEE223F60C4C00422945 /* RateViewController.swift */,
+				A98CFCE223F3610E00DA2EA2 /* RateViewController.xib */,
+				A98CFCD423F34BE000DA2EA2 /* LaunchScreen.storyboard */,
+				A98CFCD723F34BE000DA2EA2 /* Info.plist */,
+				A98CFCCF23F34BDE00DA2EA2 /* App_of_thrones.xcdatamodeld */,
+				A946AF14240413B100422945 /* cast.json */,
+				A946AF0F240413B100422945 /* houses.json */,
+				A946AF11240413B100422945 /* season_1.json */,
+				A946AF13240413B100422945 /* season_2.json */,
+				A946AF17240413B100422945 /* season_3.json */,
+				A946AF0E240413B100422945 /* season_4.json */,
+				A946AF10240413B100422945 /* season_5.json */,
+				A946AF16240413B100422945 /* season_6.json */,
+				A946AF12240413B100422945 /* season_7.json */,
+				A946AF15240413B100422945 /* season_8.json */,
+				A946AEDE23F6060800422945 /* HouseViewController.swift */,
+				A946AEDF23F6060800422945 /* HouseViewController.xib */,
+				A946AEE423FB319E00422945 /* EpisodeTableViewCell.swift */,
+				A946AEE623FB31E000422945 /* EpisodeTableViewCell.xib */,
+				A946AEEC23FB515400422945 /* DataController.swift */,
+				A946AEF223FC690D00422945 /* HouseTableViewCell.swift */,
+				A946AEF423FC694600422945 /* HouseTableViewCell.xib */,
+				A94B12ED2405E990006CDFF0 /* EpisodeDetailViewController.swift */,
+				A94B12EE2405E991006CDFF0 /* EpisodeDetailViewController.xib */,
+				A94B12F32405FF1A006CDFF0 /* RatingCell.swift */,
+				A94B12F42405FF1A006CDFF0 /* RatingCell.xib */,
+				A94B12F72405FF37006CDFF0 /* OverviewCell.swift */,
+				A94B12F82405FF37006CDFF0 /* OverviewCell.xib */,
+				A94B12FB24082FCF006CDFF0 /* FavouritesViewController.swift */,
+				A94B12FD24083000006CDFF0 /* FavouritesViewController.xib */,
+			);
+			path = "App of thrones";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A98CFCC223F34BDE00DA2EA2 /* App of thrones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98CFCDA23F34BE000DA2EA2 /* Build configuration list for PBXNativeTarget "App of thrones" */;
+			buildPhases = (
+				A98CFCBF23F34BDE00DA2EA2 /* Sources */,
+				A98CFCC023F34BDE00DA2EA2 /* Frameworks */,
+				A98CFCC123F34BDE00DA2EA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "App of thrones";
+			productName = "App of thrones";
+			productReference = A98CFCC323F34BDE00DA2EA2 /* App of thrones.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A98CFCBB23F34BDE00DA2EA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Antonio Roldan de la Rosa";
+				TargetAttributes = {
+					A98CFCC223F34BDE00DA2EA2 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = A98CFCBE23F34BDE00DA2EA2 /* Build configuration list for PBXProject "App of thrones" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A98CFCBA23F34BDE00DA2EA2;
+			productRefGroup = A98CFCC423F34BDE00DA2EA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A98CFCC223F34BDE00DA2EA2 /* App of thrones */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A98CFCC123F34BDE00DA2EA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A98CFCE423F3610E00DA2EA2 /* RateViewController.xib in Resources */,
+				A94B12F62405FF1A006CDFF0 /* RatingCell.xib in Resources */,
+				A946AF1C240413B100422945 /* season_7.json in Resources */,
+				A94B12FE24083000006CDFF0 /* FavouritesViewController.xib in Resources */,
+				A946AED323F602BB00422945 /* SettingsViewController.xib in Resources */,
+				A946AF2B2405BB4A00422945 /* AvatarCell.xib in Resources */,
+				A946AF19240413B100422945 /* houses.json in Resources */,
+				A946AEEB23FB4C1600422945 /* CastTableViewCell.xib in Resources */,
+				A98CFCD623F34BE000DA2EA2 /* LaunchScreen.storyboard in Resources */,
+				A946AECE23F6022400422945 /* CastViewController.xib in Resources */,
+				A946AF18240413B100422945 /* season_4.json in Resources */,
+				A946AF252405A94100422945 /* CastDetailViewController.xib in Resources */,
+				A946AEE123F6060800422945 /* HouseViewController.xib in Resources */,
+				A94B12F02405E991006CDFF0 /* EpisodeDetailViewController.xib in Resources */,
+				A946AF1A240413B100422945 /* season_5.json in Resources */,
+				A946AEF523FC694600422945 /* HouseTableViewCell.xib in Resources */,
+				A94B12EC2405C5B9006CDFF0 /* InfoCell.xib in Resources */,
+				A946AEE723FB31E000422945 /* EpisodeTableViewCell.xib in Resources */,
+				A946AEC623F5F08800422945 /* EpisodeViewController.xib in Resources */,
+				A94B12FA2405FF37006CDFF0 /* OverviewCell.xib in Resources */,
+				A946AF20240413B100422945 /* season_6.json in Resources */,
+				A946AF1F240413B100422945 /* season_8.json in Resources */,
+				A946AF1E240413B100422945 /* cast.json in Resources */,
+				A946AF21240413B100422945 /* season_3.json in Resources */,
+				A946AF1B240413B100422945 /* season_1.json in Resources */,
+				A98CFCD323F34BE000DA2EA2 /* Assets.xcassets in Resources */,
+				A946AF1D240413B100422945 /* season_2.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A98CFCBF23F34BDE00DA2EA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94B12FC24082FCF006CDFF0 /* FavouritesViewController.swift in Sources */,
+				A946AEF123FB54E200422945 /* House.swift in Sources */,
+				A946AF272405AEB000422945 /* CastDetailCellModels.swift in Sources */,
+				A94B12F52405FF1A006CDFF0 /* RatingCell.swift in Sources */,
+				A946AF292405BB1000422945 /* AvatarCell.swift in Sources */,
+				A946AEE323F60C4C00422945 /* RateViewController.swift in Sources */,
+				A946AEED23FB515400422945 /* DataController.swift in Sources */,
+				A98CFCC723F34BDE00DA2EA2 /* AppDelegate.swift in Sources */,
+				A946AEF323FC690E00422945 /* HouseTableViewCell.swift in Sources */,
+				A946AEE023F6060800422945 /* HouseViewController.swift in Sources */,
+				A946AEEF23FB534500422945 /* Cast.swift in Sources */,
+				A946AEE523FB319E00422945 /* EpisodeTableViewCell.swift in Sources */,
+				A946AECC23F6021500422945 /* CastViewController.swift in Sources */,
+				A94B12F92405FF37006CDFF0 /* OverviewCell.swift in Sources */,
+				A98CFCD123F34BDE00DA2EA2 /* App_of_thrones.xcdatamodeld in Sources */,
+				A94B12EA2405C585006CDFF0 /* InfoCell.swift in Sources */,
+				A946AF232405A91900422945 /* CastDetailViewController.swift in Sources */,
+				A946AEE923FB492000422945 /* CastTableViewCell.swift in Sources */,
+				A98CFCC923F34BDE00DA2EA2 /* SceneDelegate.swift in Sources */,
+				A94B12EF2405E991006CDFF0 /* EpisodeDetailViewController.swift in Sources */,
+				A946AEF92401C3B400422945 /* SettingsViewController.swift in Sources */,
+				A946AEF723FC828C00422945 /* Rating.swift in Sources */,
+				A946AEC423F5F07600422945 /* EpisodeViewController.swift in Sources */,
+				A946AED923F6057900422945 /* Episode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A98CFCD423F34BE000DA2EA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A98CFCD523F34BE000DA2EA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A98CFCD823F34BE000DA2EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A98CFCD923F34BE000DA2EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A98CFCDB23F34BE000DA2EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXCFXVPLAV;
+				INFOPLIST_FILE = "App of thrones/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "antonio.roldan.App-of-thrones";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A98CFCDC23F34BE000DA2EA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXCFXVPLAV;
+				INFOPLIST_FILE = "App of thrones/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "antonio.roldan.App-of-thrones";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A98CFCBE23F34BDE00DA2EA2 /* Build configuration list for PBXProject "App of thrones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98CFCD823F34BE000DA2EA2 /* Debug */,
+				A98CFCD923F34BE000DA2EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A98CFCDA23F34BE000DA2EA2 /* Build configuration list for PBXNativeTarget "App of thrones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A98CFCDB23F34BE000DA2EA2 /* Debug */,
+				A98CFCDC23F34BE000DA2EA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A98CFCCF23F34BDE00DA2EA2 /* App_of_thrones.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A98CFCD023F34BDE00DA2EA2 /* App_of_thrones.xcdatamodel */,
+			);
+			currentVersion = A98CFCD023F34BDE00DA2EA2 /* App_of_thrones.xcdatamodel */;
+			path = App_of_thrones.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A98CFCBB23F34BDE00DA2EA2 /* Project object */;
+}
