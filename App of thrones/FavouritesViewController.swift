@@ -12,7 +12,6 @@ class FavouritesViewController : UIViewController, UITableViewDelegate, UITableV
     var favouriteEpisodes : [Episode] = []
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var segmentedButtonOutlet: UISegmentedControl!
     override func viewDidLoad() {
         self.setUpUI()
         self.setUpNotifications()
@@ -20,10 +19,6 @@ class FavouritesViewController : UIViewController, UITableViewDelegate, UITableV
     }
     
     //MARK: IB Actions
-    
-    @IBAction func setSegmentedIndex(_ sender: Any) {
-        self.setUpData()
-    }
     
     deinit {
         let favouriteName = Notification.Name(rawValue: "DidFavouritesChange")
@@ -44,21 +39,29 @@ class FavouritesViewController : UIViewController, UITableViewDelegate, UITableV
     @objc func didRateChange(){
         tableView.reloadData()
     }
-    @objc func setUpData(){
-        let seasonNumber = segmentedButtonOutlet.selectedSegmentIndex + 1
+    
+    func setUpDataForSeason(_ seasonNumber: Int) -> [Episode] {
+        var favouritesFromSeason : [Episode] = []
         guard let pathURL = Bundle.main.url(forResource: "season_\(seasonNumber)", withExtension: "json") else { fatalError("Could not load data for episodes in favourites view controller")}
         do {
             let data = try Data.init(contentsOf: pathURL)
             let decoder = JSONDecoder()
-            favouriteEpisodes = try decoder.decode([Episode].self, from: data)
-            favouriteEpisodes = favouriteEpisodes.filter {
+            favouritesFromSeason = try decoder.decode([Episode].self, from: data)
+            favouritesFromSeason = favouritesFromSeason.filter {
                    (episode) -> Bool in
         DataController.shared.isFavourite(episode)
             }
-            tableView.reloadData()
+            return favouritesFromSeason
         } catch {
             fatalError(error.localizedDescription)
         }
+    }
+    @objc func setUpData(){
+        favouriteEpisodes.removeAll()
+        for season in 1...8 {
+            favouriteEpisodes += setUpDataForSeason(season)
+        }
+        tableView.reloadData()
     }
     
     func setUpUI() {

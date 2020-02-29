@@ -9,7 +9,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavouritesViewController" customModule="App_of_thrones" customModuleProvider="target">
             <connections>
-                <outlet property="segmentedButtonOutlet" destination="p9v-Ph-oel" id="fVt-zs-EuL"/>
                 <outlet property="tableView" destination="y7G-7l-ReK" id="z3h-lf-A8E"/>
                 <outlet property="view" destination="iN0-l3-epB" id="hIt-yB-xG8"/>
             </connections>
@@ -20,35 +19,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y7G-7l-ReK">
-                    <rect key="frame" x="0.0" y="103" width="414" height="759"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p9v-Ph-oel">
-                    <rect key="frame" x="20" y="64" width="374" height="32"/>
-                    <segments>
-                        <segment title="1"/>
-                        <segment title="2"/>
-                        <segment title="3"/>
-                        <segment title="4"/>
-                        <segment title="5"/>
-                        <segment title="6"/>
-                        <segment title="7"/>
-                        <segment title="8"/>
-                    </segments>
-                    <connections>
-                        <action selector="setSegmentedIndex:" destination="-1" eventType="valueChanged" id="Flp-Em-nBm"/>
-                    </connections>
-                </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="y7G-7l-ReK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4ki-hO-Bsd"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p9v-Ph-oel" secondAttribute="trailing" constant="20" id="8sM-jH-BIF"/>
-                <constraint firstItem="p9v-Ph-oel" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="FzL-xZ-Xeh"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="y7G-7l-ReK" secondAttribute="bottom" id="G9U-bn-jfy"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="y7G-7l-ReK" secondAttribute="trailing" id="GTx-6O-Obm"/>
-                <constraint firstItem="y7G-7l-ReK" firstAttribute="top" secondItem="p9v-Ph-oel" secondAttribute="bottom" constant="8" id="Iml-5F-OJc"/>
-                <constraint firstItem="p9v-Ph-oel" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="eN8-fv-EQ4"/>
+                <constraint firstItem="y7G-7l-ReK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="WgW-M1-nOZ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
