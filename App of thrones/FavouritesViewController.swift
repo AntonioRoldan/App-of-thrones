@@ -40,18 +40,12 @@ class FavouritesViewController : UIViewController, UITableViewDelegate, UITableV
         tableView.reloadData()
     }
     
-    func setUpDataForSeason(_ seasonNumber: Int) -> [Episode] {
-        var favouritesFromSeason : [Episode] = []
+    func setUpDataForSeason(_ seasonNumber: Int) {
         guard let pathURL = Bundle.main.url(forResource: "season_\(seasonNumber)", withExtension: "json") else { fatalError("Could not load data for episodes in favourites view controller")}
         do {
             let data = try Data.init(contentsOf: pathURL)
             let decoder = JSONDecoder()
-            favouritesFromSeason = try decoder.decode([Episode].self, from: data)
-            favouritesFromSeason = favouritesFromSeason.filter {
-                   (episode) -> Bool in
-        DataController.shared.isFavourite(episode)
-            }
-            return favouritesFromSeason
+            favouriteEpisodes += try decoder.decode([Episode].self, from: data)
         } catch {
             fatalError(error.localizedDescription)
         }
@@ -59,8 +53,12 @@ class FavouritesViewController : UIViewController, UITableViewDelegate, UITableV
     @objc func setUpData(){
         favouriteEpisodes.removeAll()
         for season in 1...8 {
-            favouriteEpisodes += setUpDataForSeason(season)
+            setUpDataForSeason(season)
         }
+        favouriteEpisodes = favouriteEpisodes.filter {
+                          (episode) -> Bool in
+               DataController.shared.isFavourite(episode)
+                   }
         tableView.reloadData()
     }
     
