@@ -8,7 +8,7 @@
 
 import Foundation
 
-class House : Codable, CustomStringConvertible, Equatable {
+class House : Codable, CustomStringConvertible, Equatable, Identifiable {
     var description: String {
         return "House name: \(self.name ?? "") House words: \(self.words ?? "") House seat \(self.seat ?? "")"
     }
@@ -16,12 +16,13 @@ class House : Codable, CustomStringConvertible, Equatable {
     static func == (lhs: House, rhs: House) -> Bool {
         return lhs.imageName == rhs.imageName && lhs.name == rhs.name && lhs.words == rhs.words && lhs.seat == rhs.seat
     }
-    
+    var id: Int
     var imageName: String?
     var name: String?
     var words: String?
     var seat: String? //El area en el que se mueve la casa
-    init(imageName: String?, name: String?, words: String?, seat: String?) {
+    init(id: Int, imageName: String?, name: String?, words: String?, seat: String?) {
+        self.id = id
         self.imageName = imageName
         self.name = name
         self.words = words

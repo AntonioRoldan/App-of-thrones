@@ -15,7 +15,7 @@ class OverviewCell: UITableViewCell {
     
     var overviewCellData : cellTypeModel? {
         didSet{
-            guard let overviewCellData = overviewCellData as? overviewCellData else { fatalError("Could not load overview cell data")}
+            guard let overviewCellData = overviewCellData as? OverviewCellData else { fatalError("Could not load overview cell data")}
             overview.text = overviewCellData.overview
         }
     }

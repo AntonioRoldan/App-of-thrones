@@ -18,7 +18,7 @@ class InfoCell : UITableViewCell {
     
     var infoCellData : cellTypeModel? {
         didSet {
-            guard let infoCellData = infoCellData as? infoCellData else { fatalError("Could not load info cell data") }
+            guard let infoCellData = infoCellData as? InfoCellData else { fatalError("Could not load info cell data") }
             switch infoCellData.header {
             case "Role information":
                 infoLabelOne.text = "Name: \(infoCellData.labels[0] ?? "" ), Role name: \(infoCellData.labels[1] ?? "")"
@@ -39,7 +39,15 @@ class InfoCell : UITableViewCell {
                 infoLabelOne.text = "Season: \(infoCellData.labels[0] ?? "")"
                 infoLabelTwo.text = "Episode: \(infoCellData.labels[1] ?? "")"
                 header.text = infoCellData.header
-                break 
+                break
+            case "Name and words":
+                infoLabelOne.text = "Name: \(infoCellData.labels[0] ?? "")"
+                infoLabelTwo.text = "Words: \(infoCellData.labels[1] ?? "")"
+                header.text = infoCellData.header
+            case "Seat":
+                infoLabelOne.text = "Seat: \(infoCellData.labels[0] ?? "")"
+                infoLabelTwo.text = ""
+                header.text = infoCellData.header
             default:
                 break
             }

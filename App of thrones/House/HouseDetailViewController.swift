@@ -1,20 +1,27 @@
+//
+//  HouseDetailViewController.swift
+//  App of thrones
+//
+//  Created by Antonio Miguel Roldan de la Rosa on 01/03/2020.
+//  Copyright © 2020 Antonio Roldan de la Rosa. All rights reserved.
+//
 
 import UIKit
 
-class CastDetailViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HouseDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     var cellsArray : [cellTypeModel] = []
     @IBOutlet weak var tableView: UITableView!
-    var cast: Cast?
+    var house : House?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpUI()
         self.setUpCellsData()
     }
     
-    // MARK: Setup functions
-    
-    func setUpUI() {
-        self.title = "Cast detail"
+    func setUpUI(){
+        self.title = "House detail"
         let avatarNib = UINib.init(nibName: "AvatarCell", bundle: nil)
         tableView.register(avatarNib, forCellReuseIdentifier: "AvatarCell")
         let infoNib = UINib.init(nibName: "InfoCell", bundle: nil)
@@ -23,20 +30,15 @@ class CastDetailViewController : UIViewController, UITableViewDelegate, UITableV
         tableView.dataSource = self
     }
     
-    func setUpCellsData() {
-        guard let cast = self.cast else {
-                   fatalError("Cast was not passed to view controller")
-               }
-        let avatarCell : AvatarCellData = AvatarCellData.init(avatarName: cast.avatar)
-        let infoCellRole : InfoCellData = InfoCellData.init(header: "Role information", labels: [cast.fullname, cast.role, String(cast.episodes ?? 0)])
-    
-        let infoCellBirth : InfoCellData = InfoCellData.init(header: "Birth information", labels: [cast.birth, cast.placeBirth])
+    func setUpCellsData(){
+        guard let house = self.house else { fatalError("Could not unwrap house in house detail view controller") }
+        let avatarCell : AvatarCellData = AvatarCellData.init(avatarName: house.imageName)
+        let infoCellNameAndWords: InfoCellData = InfoCellData.init(header: "Name and words", labels: [house.name ?? "", house.words ?? ""])
+        let infoCellSeat: InfoCellData = InfoCellData.init(header: "Seat", labels: [house.seat ?? ""])
         cellsArray.append(avatarCell)
-        cellsArray.append(infoCellRole)
-        cellsArray.append(infoCellBirth)
+        cellsArray.append(contentsOf: [infoCellNameAndWords, infoCellSeat])
     }
-    
-    // MARK: TableView delegate methods
+    //MARK: Table view delegate
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if(cellsArray[indexPath.row].cellType == .avatar) {
@@ -45,25 +47,28 @@ class CastDetailViewController : UIViewController, UITableViewDelegate, UITableV
         return 60
     }
     
-    //MARK: TableView data source methods
+    //MARK: Table view data source
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cellsArray.count
+        cellsArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if(cellsArray[indexPath.row].cellType == .avatar){
+        switch cellsArray[indexPath.row].cellType {
+        case .avatar:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "AvatarCell", for: indexPath) as? AvatarCell else { fatalError("Could not load cell") }
             cell.avatarCellData = cellsArray[indexPath.row]
             return cell
-        } else{
+        case .infoCell:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath) as? InfoCell else { fatalError("Could not load cell") }
             cell.infoCellData = cellsArray[indexPath.row]
             return cell
+        default:
+            return UITableViewCell()
         }
     }
 }

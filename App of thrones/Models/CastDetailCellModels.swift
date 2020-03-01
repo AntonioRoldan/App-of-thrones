@@ -21,23 +21,23 @@ protocol cellTypeModel {
 
 
 
-struct avatarCellData : cellTypeModel {
+struct AvatarCellData : cellTypeModel {
     var cellType : cellType = .avatar
     let avatarName: String?
 }
 
-struct infoCellData : cellTypeModel {
+struct InfoCellData : cellTypeModel {
     var cellType: cellType = .infoCell
     let header : String
     var labels : [String?] = []
 }
 
-struct ratingCellData: cellTypeModel {
+struct RatingCellData: cellTypeModel {
     var cellType : cellType = .rating
     var episode : Episode
 }
 
-struct overviewCellData: cellTypeModel {
+struct OverviewCellData: cellTypeModel {
     var cellType: cellType = .overview
     let overview: String
 }

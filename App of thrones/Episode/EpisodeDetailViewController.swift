@@ -59,11 +59,11 @@ class EpisodeDetailViewController: UIViewController, UITableViewDelegate, UITabl
         guard let episode = self.episode, let overview = episode.overview else {
                           fatalError("Episode was not passed to view controller")
                       }
-        let avatarCell : avatarCellData = avatarCellData.init(avatarName: episode.image)
-        let ratingCell : ratingCellData = ratingCellData.init( episode: episode)
-        let infoCellNameAndDate : infoCellData = infoCellData.init(header: "Name and date", labels: [episode.name, episode.date])
-        let infoCellSeasonAndEpisode : infoCellData = infoCellData.init(header: "Season and episode", labels: [String(episode.season), String(episode.episode ?? 0)])
-        let overviewCell : overviewCellData = overviewCellData.init(overview: overview)
+        let avatarCell : AvatarCellData = AvatarCellData.init(avatarName: episode.image)
+        let ratingCell : RatingCellData = RatingCellData.init( episode: episode)
+        let infoCellNameAndDate : InfoCellData = InfoCellData.init(header: "Name and date", labels: [episode.name, episode.date])
+        let infoCellSeasonAndEpisode : InfoCellData = InfoCellData.init(header: "Season and episode", labels: [String(episode.season), String(episode.episode ?? 0)])
+        let overviewCell : OverviewCellData = OverviewCellData.init(overview: overview)
         cellsArray.append(avatarCell)
         cellsArray.append(ratingCell)
         cellsArray.append(infoCellNameAndDate)

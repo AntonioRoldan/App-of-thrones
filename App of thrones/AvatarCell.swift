@@ -14,7 +14,7 @@ class AvatarCell : UITableViewCell {
     
     var avatarCellData : cellTypeModel? {
         didSet {
-            guard let avatarCellData = avatarCellData as? avatarCellData, let avatarName = avatarCellData.avatarName else {
+            guard let avatarCellData = avatarCellData as? AvatarCellData, let avatarName = avatarCellData.avatarName else {
                 fatalError("Could not get avatar name")
             }
             avatar.image = UIImage(named: avatarName)

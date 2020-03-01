@@ -52,6 +52,8 @@
 		A94B12FA2405FF37006CDFF0 /* OverviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94B12F82405FF37006CDFF0 /* OverviewCell.xib */; };
 		A94B12FC24082FCF006CDFF0 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B12FB24082FCF006CDFF0 /* FavouritesViewController.swift */; };
 		A94B12FE24083000006CDFF0 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94B12FD24083000006CDFF0 /* FavouritesViewController.xib */; };
+		A94B1304240BD85B006CDFF0 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B1302240BD85B006CDFF0 /* HouseDetailViewController.swift */; };
+		A94B1305240BD85B006CDFF0 /* HouseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94B1303240BD85B006CDFF0 /* HouseDetailViewController.xib */; };
 		A98CFCC723F34BDE00DA2EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98CFCC623F34BDE00DA2EA2 /* AppDelegate.swift */; };
 		A98CFCC923F34BDE00DA2EA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98CFCC823F34BDE00DA2EA2 /* SceneDelegate.swift */; };
 		A98CFCD123F34BDE00DA2EA2 /* App_of_thrones.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A98CFCCF23F34BDE00DA2EA2 /* App_of_thrones.xcdatamodeld */; };
@@ -106,6 +108,8 @@
 		A94B12F82405FF37006CDFF0 /* OverviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverviewCell.xib; sourceTree = "<group>"; };
 		A94B12FB24082FCF006CDFF0 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		A94B12FD24083000006CDFF0 /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
+		A94B1302240BD85B006CDFF0 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
+		A94B1303240BD85B006CDFF0 /* HouseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseDetailViewController.xib; sourceTree = "<group>"; };
 		A98CFCC323F34BDE00DA2EA2 /* App of thrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App of thrones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98CFCC623F34BDE00DA2EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A98CFCC823F34BDE00DA2EA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,10 +140,6 @@
 				A946AEEA23FB4C1600422945 /* CastTableViewCell.xib */,
 				A946AF222405A91900422945 /* CastDetailViewController.swift */,
 				A946AF242405A94100422945 /* CastDetailViewController.xib */,
-				A946AF282405BB1000422945 /* AvatarCell.swift */,
-				A946AF2A2405BB4A00422945 /* AvatarCell.xib */,
-				A94B12E92405C585006CDFF0 /* InfoCell.swift */,
-				A94B12EB2405C5B9006CDFF0 /* InfoCell.xib */,
 			);
 			path = Cast;
 			sourceTree = "<group>";
@@ -165,6 +165,43 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A94B12FF240BD4B8006CDFF0 /* House */ = {
+			isa = PBXGroup;
+			children = (
+				A946AEDE23F6060800422945 /* HouseViewController.swift */,
+				A946AEDF23F6060800422945 /* HouseViewController.xib */,
+				A946AEF223FC690D00422945 /* HouseTableViewCell.swift */,
+				A946AEF423FC694600422945 /* HouseTableViewCell.xib */,
+				A94B1302240BD85B006CDFF0 /* HouseDetailViewController.swift */,
+				A94B1303240BD85B006CDFF0 /* HouseDetailViewController.xib */,
+			);
+			path = House;
+			sourceTree = "<group>";
+		};
+		A94B1300240BD4F8006CDFF0 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				A946AEC323F5F07600422945 /* EpisodeViewController.swift */,
+				A946AEC523F5F08800422945 /* EpisodeViewController.xib */,
+				A946AEE423FB319E00422945 /* EpisodeTableViewCell.swift */,
+				A946AEE623FB31E000422945 /* EpisodeTableViewCell.xib */,
+				A94B12ED2405E990006CDFF0 /* EpisodeDetailViewController.swift */,
+				A94B12EE2405E991006CDFF0 /* EpisodeDetailViewController.xib */,
+				A946AEE223F60C4C00422945 /* RateViewController.swift */,
+				A98CFCE223F3610E00DA2EA2 /* RateViewController.xib */,
+			);
+			path = Episode;
+			sourceTree = "<group>";
+		};
+		A94B1301240BD7CB006CDFF0 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				A94B12FB24082FCF006CDFF0 /* FavouritesViewController.swift */,
+				A94B12FD24083000006CDFF0 /* FavouritesViewController.xib */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
 		A98CFCBA23F34BDE00DA2EA2 = {
 			isa = PBXGroup;
 			children = (
@@ -186,14 +223,13 @@
 			children = (
 				A98CFCC823F34BDE00DA2EA2 /* SceneDelegate.swift */,
 				A98CFCC623F34BDE00DA2EA2 /* AppDelegate.swift */,
+				A94B1300240BD4F8006CDFF0 /* Episode */,
+				A94B12FF240BD4B8006CDFF0 /* House */,
 				A946AED723F6055E00422945 /* Models */,
 				A946AECF23F6029000422945 /* Settings */,
 				A946AECA23F601F200422945 /* Cast */,
+				A94B1301240BD7CB006CDFF0 /* Favourites */,
 				A98CFCD223F34BE000DA2EA2 /* Assets.xcassets */,
-				A946AEC323F5F07600422945 /* EpisodeViewController.swift */,
-				A946AEC523F5F08800422945 /* EpisodeViewController.xib */,
-				A946AEE223F60C4C00422945 /* RateViewController.swift */,
-				A98CFCE223F3610E00DA2EA2 /* RateViewController.xib */,
 				A98CFCD423F34BE000DA2EA2 /* LaunchScreen.storyboard */,
 				A98CFCD723F34BE000DA2EA2 /* Info.plist */,
 				A98CFCCF23F34BDE00DA2EA2 /* App_of_thrones.xcdatamodeld */,
@@ -207,21 +243,15 @@
 				A946AF16240413B100422945 /* season_6.json */,
 				A946AF12240413B100422945 /* season_7.json */,
 				A946AF15240413B100422945 /* season_8.json */,
-				A946AEDE23F6060800422945 /* HouseViewController.swift */,
-				A946AEDF23F6060800422945 /* HouseViewController.xib */,
-				A946AEE423FB319E00422945 /* EpisodeTableViewCell.swift */,
-				A946AEE623FB31E000422945 /* EpisodeTableViewCell.xib */,
 				A946AEEC23FB515400422945 /* DataController.swift */,
-				A946AEF223FC690D00422945 /* HouseTableViewCell.swift */,
-				A946AEF423FC694600422945 /* HouseTableViewCell.xib */,
-				A94B12ED2405E990006CDFF0 /* EpisodeDetailViewController.swift */,
-				A94B12EE2405E991006CDFF0 /* EpisodeDetailViewController.xib */,
+				A946AF282405BB1000422945 /* AvatarCell.swift */,
+				A946AF2A2405BB4A00422945 /* AvatarCell.xib */,
+				A94B12E92405C585006CDFF0 /* InfoCell.swift */,
+				A94B12EB2405C5B9006CDFF0 /* InfoCell.xib */,
 				A94B12F32405FF1A006CDFF0 /* RatingCell.swift */,
 				A94B12F42405FF1A006CDFF0 /* RatingCell.xib */,
 				A94B12F72405FF37006CDFF0 /* OverviewCell.swift */,
 				A94B12F82405FF37006CDFF0 /* OverviewCell.xib */,
-				A94B12FB24082FCF006CDFF0 /* FavouritesViewController.swift */,
-				A94B12FD24083000006CDFF0 /* FavouritesViewController.xib */,
 			);
 			path = "App of thrones";
 			sourceTree = "<group>";
@@ -300,6 +330,7 @@
 				A94B12F02405E991006CDFF0 /* EpisodeDetailViewController.xib in Resources */,
 				A946AF1A240413B100422945 /* season_5.json in Resources */,
 				A946AEF523FC694600422945 /* HouseTableViewCell.xib in Resources */,
+				A94B1305240BD85B006CDFF0 /* HouseDetailViewController.xib in Resources */,
 				A94B12EC2405C5B9006CDFF0 /* InfoCell.xib in Resources */,
 				A946AEE723FB31E000422945 /* EpisodeTableViewCell.xib in Resources */,
 				A946AEC623F5F08800422945 /* EpisodeViewController.xib in Resources */,
@@ -321,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94B1304240BD85B006CDFF0 /* HouseDetailViewController.swift in Sources */,
 				A94B12FC24082FCF006CDFF0 /* FavouritesViewController.swift in Sources */,
 				A946AEF123FB54E200422945 /* House.swift in Sources */,
 				A946AF272405AEB000422945 /* CastDetailCellModels.swift in Sources */,

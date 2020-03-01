@@ -42,7 +42,7 @@ class RatingCell: UITableViewCell {
     
     var ratingCellData : cellTypeModel? {
         didSet{
-            guard let ratingCellData = ratingCellData as? ratingCellData else {fatalError("Could not load rating cell data")}
+            guard let ratingCellData = ratingCellData as? RatingCellData else {fatalError("Could not load rating cell data")}
             episode = ratingCellData.episode
         }
     }

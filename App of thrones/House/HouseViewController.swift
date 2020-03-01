@@ -16,9 +16,19 @@ class HouseViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         let nib = UINib.init(nibName: "HouseTableViewCell", bundle: nil)
         self.setUpHouseData()
+        self.setUpNotifications()
         tableView.register(nib, forCellReuseIdentifier: "HouseTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    func setUpNotifications(){
+        let favouritesChanged = Notification.Name(rawValue: "DidFavouritesChange")
+        NotificationCenter.default.addObserver(self, selector: #selector(self.didFavouritesChange), name: favouritesChanged, object: nil)
+    }
+    
+    @objc func didFavouritesChange(){
+        tableView.reloadData()
     }
     
     func setUpHouseData(){
@@ -40,7 +50,9 @@ class HouseViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Se ha hecho tap en la celda con sección \(indexPath.section) y fila \(indexPath.row)")
+        let houseDetailVc = HouseDetailViewController()
+        houseDetailVc.house = self.houses[indexPath.row]
+        self.navigationController?.pushViewController(houseDetailVc, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
@@ -57,6 +69,9 @@ class HouseViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = self.tableView.dequeueReusableCell(withIdentifier: "HouseTableViewCell", for: indexPath) as? HouseTableViewCell {
             cell.setHouse(house: houses[indexPath.row])
+            cell.reloadData = {
+                tableView.reloadData()
+            }
             return cell
         }
         fatalError("Could not create Episode cell")

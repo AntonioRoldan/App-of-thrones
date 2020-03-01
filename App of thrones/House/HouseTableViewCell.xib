@@ -49,6 +49,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgP-Pt-77W">
+                        <rect key="frame" x="355" y="0.0" width="59" height="148"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="148" id="BB9-JZ-jqE"/>
+                            <constraint firstAttribute="width" constant="59" id="BIF-zA-x40"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="heart" catalog="system">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="pressFav:" destination="EIR-yG-WYN" eventType="touchUpInside" id="fEc-Gf-1rS"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
@@ -58,7 +72,9 @@
                     <constraint firstItem="WNx-ve-GKr" firstAttribute="top" secondItem="VqR-sI-4wI" secondAttribute="top" constant="30" id="Icj-Ex-vXE"/>
                     <constraint firstItem="WNx-ve-GKr" firstAttribute="leading" secondItem="dcz-Kt-gYL" secondAttribute="trailing" constant="8" id="NQd-LU-zqV"/>
                     <constraint firstItem="BYv-4v-yOf" firstAttribute="leading" secondItem="dcz-Kt-gYL" secondAttribute="trailing" constant="8" id="Sbj-4B-qaO"/>
+                    <constraint firstAttribute="trailing" secondItem="FgP-Pt-77W" secondAttribute="trailing" id="Zhu-I9-g9f"/>
                     <constraint firstAttribute="trailing" secondItem="ucO-dp-kxC" secondAttribute="trailing" id="Zjr-WQ-5hB"/>
+                    <constraint firstItem="FgP-Pt-77W" firstAttribute="top" secondItem="VqR-sI-4wI" secondAttribute="top" id="g0o-CS-VXh"/>
                     <constraint firstItem="ucO-dp-kxC" firstAttribute="leading" secondItem="dcz-Kt-gYL" secondAttribute="trailing" constant="8" id="t8D-Fe-ggw"/>
                     <constraint firstAttribute="trailing" secondItem="BYv-4v-yOf" secondAttribute="trailing" id="xx8-Qc-Bk5"/>
                     <constraint firstItem="dcz-Kt-gYL" firstAttribute="centerY" secondItem="VqR-sI-4wI" secondAttribute="centerY" id="yRY-L1-eup"/>
@@ -66,6 +82,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="favButton" destination="FgP-Pt-77W" id="BTP-x4-Mc4"/>
                 <outlet property="houseImage" destination="dcz-Kt-gYL" id="oqL-f3-rkX"/>
                 <outlet property="seat" destination="BYv-4v-yOf" id="fWI-b9-Pqv"/>
                 <outlet property="slogan" destination="ucO-dp-kxC" id="qCb-tr-XBV"/>
@@ -74,4 +91,7 @@
             <point key="canvasLocation" x="42.028985507246382" y="2.0089285714285712"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
+    </resources>
 </document>
